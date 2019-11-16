@@ -95,4 +95,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/LiuYi11437/LiuYi11437.github.io.git
+  branch: master
