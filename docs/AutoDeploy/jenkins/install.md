@@ -1,34 +1,37 @@
-# Jenkins部署
+# centos7 环境下部署 Jenkins
 
-## 安装weget
+## 安装 weget
+
 ```
  yum install wget -y
 ```
 
-## 安装jenkins yum源
+## 安装 jenkins yum 源
+
 ```
   wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
 ```
 
-## 下载并导入yum仓库的key
+## 下载并导入 yum 仓库的 key
+
 ```
   rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 ```
 
+## 安装 java 环境
 
-
-## 安装java环境
 ```
  yum install java -y
 ```
 
-## 安装Jenkins
+## 安装 Jenkins
+
 ```
   yum install jenkins -y
 ```
 
-## 创建deploy用户作为系统服务用户
+## 创建 deploy 用户作为系统服务用户
+
 ```
-  yum install jenkins -y
   vi /etc/sysconfig/jenkins
 ```
