@@ -60,15 +60,19 @@ module.exports = merge(common, {
 });
 ```
 
-webpack.dev.js 初始代码如下
+开发环境执行`npm i webpack-dev-server --save-dev`使用 webpack-dev-server 插件实现实时预览更新，webpack.dev.js 初始代码如下
 
 ```
 const merge = require("webpack-merge");
 const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
-  mode: "development"
-
+  mode: "development",
+  devServer: {
+    contentBase: "../dist",
+    port: 8088,
+    open: true
+  }
 });
 ```
 
@@ -79,6 +83,6 @@ module.exports = merge(common, {
 </div>
 
 ```
-"dev": "webpack --config ./build/webpack.dev.js",
+"dev": "webpack-dev-server --config ./build/webpack.dev.js",
 "build": "webpack --config ./build/webpack.prod.js"
 ```
