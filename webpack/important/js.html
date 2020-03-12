@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>js 文件的处理 | 个人博客</title>
+    <meta name="description" content="天堂的来客的博客">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.26cb1efd.css" as="style"><link rel="preload" href="/assets/js/app.792161f7.js" as="script"><link rel="preload" href="/assets/js/2.d42e0240.js" as="script"><link rel="preload" href="/assets/js/12.8185749b.js" as="script"><link rel="prefetch" href="/assets/js/10.3c13c8f9.js"><link rel="prefetch" href="/assets/js/11.3a3ab3d4.js"><link rel="prefetch" href="/assets/js/13.c6e32a8c.js"><link rel="prefetch" href="/assets/js/14.5f0c7e14.js"><link rel="prefetch" href="/assets/js/15.151bf572.js"><link rel="prefetch" href="/assets/js/16.427bd641.js"><link rel="prefetch" href="/assets/js/17.94030c2e.js"><link rel="prefetch" href="/assets/js/18.31f1161b.js"><link rel="prefetch" href="/assets/js/19.d506e11e.js"><link rel="prefetch" href="/assets/js/20.105e1386.js"><link rel="prefetch" href="/assets/js/21.c21c8c18.js"><link rel="prefetch" href="/assets/js/22.35743ce4.js"><link rel="prefetch" href="/assets/js/23.34a32379.js"><link rel="prefetch" href="/assets/js/24.5506d7be.js"><link rel="prefetch" href="/assets/js/25.6bbdbd5b.js"><link rel="prefetch" href="/assets/js/3.752bef59.js"><link rel="prefetch" href="/assets/js/4.b8ae9e56.js"><link rel="prefetch" href="/assets/js/5.cbc9c59f.js"><link rel="prefetch" href="/assets/js/6.354dcfb2.js"><link rel="prefetch" href="/assets/js/7.4a1e3261.js"><link rel="prefetch" href="/assets/js/8.1640fb51.js"><link rel="prefetch" href="/assets/js/9.21f909fd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26cb1efd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  个人主页
+</a></div><div class="nav-item"><a href="/AutoDeploy/" class="nav-link">
+  自动化部署
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link router-link-active">
+  webpack
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  个人主页
+</a></div><div class="nav-item"><a href="/AutoDeploy/" class="nav-link">
+  自动化部署
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link router-link-active">
+  webpack
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>webpack基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/base/init.html" class="sidebar-link">从零构建 webpack 工程</a></li><li><a href="/webpack/base/environment.html" class="sidebar-link">线上环境和开发环境</a></li><li><a href="/webpack/base/staticfile.html" class="sidebar-link">简单静态资源管理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>重要文件处理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/important/css.html" class="sidebar-link">样式文件处理</a></li><li><a href="/webpack/important/js.html" class="active sidebar-link">js 文件的处理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webpack/important/js.html#使用-babel-转译-js-文件" class="sidebar-link">使用 babel 转译 js 文件</a></li><li class="sidebar-sub-header"><a href="/webpack/important/js.html#使用eslint规范化代码" class="sidebar-link">使用eslint规范化代码</a></li></ul></li><li><a href="/webpack/important/project.html" class="sidebar-link">自写 webpack 打包国土项目</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>webpack进阶配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/advance/splitchunks.html" class="sidebar-link">splitChunks代码分离</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="js-文件的处理"><a href="#js-文件的处理" class="header-anchor">#</a> js 文件的处理</h1> <h2 id="使用-babel-转译-js-文件"><a href="#使用-babel-转译-js-文件" class="header-anchor">#</a> 使用 babel 转译 js 文件</h2> <p>安装依赖</p> <div class="language- extra-class"><pre class="language-text"><code>npm install --save-dev babel-loader @babel/core @babel/preset-env
+</code></pre></div><p>无论线上还是线下都需要对 js 文件进行转译，所以 js 文件处理应该放在通用配置中，配置内容如下。</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    test: /\.js$/,
+    use: {
+        loader: 'babel-loader',
+        options: {
+            presets: ['@babel/preset-env']
+        }
+    },
+    exclude: /node_modules/
+}
+</code></pre></div><p><code>include</code>哪个文件下的 js 代码需要 babel 处理</p> <p><code>exclude</code>忽略掉哪个文件夹下的 js 文件</p> <p><code>.babelrc</code>是 webpack 中 babel 插件默认的配置文件，可以将 babel 对 js 的处理规则单独写在这个文件中，减少 webpack 配置的代码量更容易阅读。</p> <p>在入口文件中写一段 es6 语句，然后执行打包，将打包好的文件内容与入口文件进行对比</p> <div align="center"><img src="/assets/img/8.387bd347.png" width=""></div> <p>可以看到打包后 const 被翻译成 var,箭头函数被翻译成普通函数。但是 Promise 和 map 这些高级语法中的函数却依然保留，但低版本浏览器并不支持这些函数，因此需要使用 babel 的一个库将这些缺失的函数添加进去。</p> <p>这个库在线上环境也要使用因此要安装在线上环境下。</p> <div class="language- extra-class"><pre class="language-text"><code>npm i @babel/polyfill --save
+</code></pre></div><p>在入口函数中引入这个库</p> <div class="language- extra-class"><pre class="language-text"><code>import &quot;@babel/polyfill&quot;;
+</code></pre></div><p>再执行打包，可以看到第二次打包的主文件比上次大了很多。那是因为这个库将 es5 中缺省的函数以 es5 的语法进行了实现并引入</p> <div align="center"><img src="/assets/img/9.960835e9.png" width=""></div> <p>但目前是将所有的方法全部引入，无用实际代码中是否用到。可以通过配置 useBuiltIns 实现按需加载，配置内容如下</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;presets&quot;: [
+    [
+      &quot;@babel/preset-env&quot;,
+      {
+        &quot;useBuiltIns&quot;: &quot;usage&quot;,
+        &quot;corejs&quot;: 2
+      }
+    ]
+  ]
+}
+</code></pre></div><p>再次打包后即可发现文件小了很多,也无需引入@babel/polyfill。</p> <div align="center"><img src="/assets/img/10.99ba3c80.png" width=""></div>
+用到的插件及作用
+<div class="custom-block tip"><p class="custom-block-title">babel-loader</p> <p>webpak 与 babel 进行通信用的插件，webpack 本身虽然能对 js 文件进行处理，但不具备将 es6 语法翻译成 es5 的能力。</p> <p><a href="https://webpack.docschina.org/loaders/babel-loader/" target="_blank" rel="noopener noreferrer">官网参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="custom-block tip"><p class="custom-block-title">@babel/core</p> <p>当 webpack 使用 babel-loader 处理文件时，babel-loader 实际上调用了 babel-core 的 api，因此也必须安装 babel-core.</p> <p><a href="http://babel.docschina.org/docs/en/babel-core#docsNav" target="_blank" rel="noopener noreferrer">官网参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="custom-block tip"><p class="custom-block-title">@babel/preset-env</p> <p>告诉 babel 使用哪种转码规则进行文件处理。</p> <p><a href="http://babel.docschina.org/docs/en/babel-preset-env" target="_blank" rel="noopener noreferrer">官网参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="custom-block tip"><p class="custom-block-title">@babel/polyfill</p> <p>Babel 默认只转换新的 JavaScript 句法（syntax），而不转换新的 API，比如 Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise 等全局对象，以及一些定义在全局对象上的方法（比如 Object.assign）都不会转码。</p> <p>举例来说，ES6 在 Array 对象上新增了 Array.from 方法。Babel 就不会转码这个方法。如果想让这个方法运行，必须使用 babel-polyfill，为当前环境提供一个垫片。</p> <p><a href="http://babel.docschina.org/docs/en/babel-polyfill#docsNav" target="_blank" rel="noopener noreferrer">官网参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <h2 id="使用eslint规范化代码"><a href="#使用eslint规范化代码" class="header-anchor">#</a> 使用eslint规范化代码</h2> <p>安装依赖</p> <div class="language- extra-class"><pre class="language-text"><code> npm install eslint-loader --save-dev
+</code></pre></div><p>修改对js的处理规则如下</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    test: /\.js$/,
+    use: [&quot;babel-loader&quot;, &quot;eslint-loader&quot;],
+    exclude: /node_modules/
+}
+</code></pre></div><p><a href="https://webpack.docschina.org/loaders/eslint-loader/" target="_blank" rel="noopener noreferrer">官网参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webpack/important/css.html" class="prev">
+        样式文件处理
+      </a></span> <span class="next"><a href="/webpack/important/project.html">
+        自写 webpack 打包国土项目
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.792161f7.js" defer></script><script src="/assets/js/2.d42e0240.js" defer></script><script src="/assets/js/12.8185749b.js" defer></script>
+  </body>
+</html>

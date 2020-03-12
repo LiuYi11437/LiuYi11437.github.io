@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自写 webpack 打包国土项目 | 个人博客</title>
+    <meta name="description" content="天堂的来客的博客">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.26cb1efd.css" as="style"><link rel="preload" href="/assets/js/app.792161f7.js" as="script"><link rel="preload" href="/assets/js/2.d42e0240.js" as="script"><link rel="preload" href="/assets/js/9.21f909fd.js" as="script"><link rel="prefetch" href="/assets/js/10.3c13c8f9.js"><link rel="prefetch" href="/assets/js/11.3a3ab3d4.js"><link rel="prefetch" href="/assets/js/12.8185749b.js"><link rel="prefetch" href="/assets/js/13.c6e32a8c.js"><link rel="prefetch" href="/assets/js/14.5f0c7e14.js"><link rel="prefetch" href="/assets/js/15.151bf572.js"><link rel="prefetch" href="/assets/js/16.427bd641.js"><link rel="prefetch" href="/assets/js/17.94030c2e.js"><link rel="prefetch" href="/assets/js/18.31f1161b.js"><link rel="prefetch" href="/assets/js/19.d506e11e.js"><link rel="prefetch" href="/assets/js/20.105e1386.js"><link rel="prefetch" href="/assets/js/21.c21c8c18.js"><link rel="prefetch" href="/assets/js/22.35743ce4.js"><link rel="prefetch" href="/assets/js/23.34a32379.js"><link rel="prefetch" href="/assets/js/24.5506d7be.js"><link rel="prefetch" href="/assets/js/25.6bbdbd5b.js"><link rel="prefetch" href="/assets/js/3.752bef59.js"><link rel="prefetch" href="/assets/js/4.b8ae9e56.js"><link rel="prefetch" href="/assets/js/5.cbc9c59f.js"><link rel="prefetch" href="/assets/js/6.354dcfb2.js"><link rel="prefetch" href="/assets/js/7.4a1e3261.js"><link rel="prefetch" href="/assets/js/8.1640fb51.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26cb1efd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  个人主页
+</a></div><div class="nav-item"><a href="/AutoDeploy/" class="nav-link">
+  自动化部署
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link router-link-active">
+  webpack
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  个人主页
+</a></div><div class="nav-item"><a href="/AutoDeploy/" class="nav-link">
+  自动化部署
+</a></div><div class="nav-item"><a href="/webpack/" class="nav-link router-link-active">
+  webpack
+</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>webpack基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/base/init.html" class="sidebar-link">从零构建 webpack 工程</a></li><li><a href="/webpack/base/environment.html" class="sidebar-link">线上环境和开发环境</a></li><li><a href="/webpack/base/staticfile.html" class="sidebar-link">简单静态资源管理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>重要文件处理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/important/css.html" class="sidebar-link">样式文件处理</a></li><li><a href="/webpack/important/js.html" class="sidebar-link">js 文件的处理</a></li><li><a href="/webpack/important/project.html" class="active sidebar-link">自写 webpack 打包国土项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webpack/important/project.html#处理-vue-文件" class="sidebar-link">处理 vue 文件</a></li><li class="sidebar-sub-header"><a href="/webpack/important/project.html#支持-jsx-语法" class="sidebar-link">支持 jsx 语法</a></li><li class="sidebar-sub-header"><a href="/webpack/important/project.html#集成公司的业务代码" class="sidebar-link">集成公司的业务代码</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>webpack进阶配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/advance/splitchunks.html" class="sidebar-link">splitChunks代码分离</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="自写-webpack-打包国土项目"><a href="#自写-webpack-打包国土项目" class="header-anchor">#</a> 自写 webpack 打包国土项目</h1> <h2 id="处理-vue-文件"><a href="#处理-vue-文件" class="header-anchor">#</a> 处理 vue 文件</h2> <p>安装依赖</p> <div class="language- extra-class"><pre class="language-text"><code>npm i vue-loader vue-template-compiler --save-dev
+</code></pre></div><p>添加对 vue 文件的处理规则</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    test: /\.vue$/,
+    loader: &quot;vue-loader&quot;
+}
+</code></pre></div><p>安装 eslint vue 代码检查插件</p> <div class="language- extra-class"><pre class="language-text"><code>npm i eslint-plugin-vue --save-dev
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">注意</p> <p>除了添加对 vue 文件的处理规则还需要，引入并使用 VueLoaderPlugin 这个插件。</p> <div align="center"><img src="/assets/img/11.1b9218c0.png" width=""></div></div> <h2 id="支持-jsx-语法"><a href="#支持-jsx-语法" class="header-anchor">#</a> 支持 jsx 语法</h2> <p>很多时候我们会在 js 中写 render 函数渲染页面，但 render 函数中的 jsx 语法 babel 并不认识导致打包出错，因此需要 js 文件中支持 jsx 的语法。</p> <p>安装依赖</p> <div class="language- extra-class"><pre class="language-text"><code>npm i babel-helper-vue-jsx-merge-props babel-plugin-transform-vue-jsx babel-plugin-syntax-jsx --save-dev
+</code></pre></div><p>修改 babel 配置如下</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;presets&quot;: [
+    [
+      &quot;@babel/preset-env&quot;,
+      {
+        &quot;useBuiltIns&quot;: &quot;usage&quot;,
+        &quot;corejs&quot;: 2
+      }
+    ]
+  ],
+  &quot;plugins&quot;: [&quot;transform-vue-jsx&quot;]
+}
+
+</code></pre></div><p><a href="https://www.npmjs.com/package/babel-plugin-transform-vue-jsx" target="_blank" rel="noopener noreferrer">插件参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="集成公司的业务代码"><a href="#集成公司的业务代码" class="header-anchor">#</a> 集成公司的业务代码</h2> <p>将我们用于测试的 src 目录删除，将基线的 src 拷贝到我们项目的目录下</p> <div align="center"><img src="/assets/img/12.7fa9cff7.png" width=""></div> <p>拷贝公司项目中用到的线上环境的依赖到我们的测试环境中,执行命令<code>npm install</code>安装依赖</p> <p>在公共配置中添加 resolve 配置如下</p> <div class="language- extra-class"><pre class="language-text"><code>resolve: {
+    extensions: [&quot;.js&quot;, &quot;.json&quot;, &quot;.vue&quot;],
+    alias: {
+      &quot;@&quot;: path.resolve(__dirname, &quot;../src/&quot;),
+      YZT: path.resolve(__dirname, &quot;../src/views/YZT/&quot;),
+      JDGL: path.resolve(__dirname, &quot;../src/views/JDGL/&quot;),
+      FZBZ: path.resolve(__dirname, &quot;../src/views/FZBZ/&quot;),
+      JCYJ: path.resolve(__dirname, &quot;../src/views/JCYJ/&quot;),
+      ZBMX: path.resolve(__dirname, &quot;../src/views/ZBMX/&quot;),
+      YWXT: path.resolve(__dirname, &quot;../src/views/YWXT/&quot;),
+      MXXT: path.resolve(__dirname, &quot;../src/views/MXXT/&quot;),
+      FZSC: path.resolve(__dirname, &quot;../src/views/FZSC/&quot;)
+    }
+  }
+</code></pre></div><p><code>extensions</code>：自动解析确定的扩展。导入后缀在配置中的文件时不用加后缀名</p> <p><code>alias</code>：创建 import 或 require 的别名，来确保模块引入变得更简单。</p> <p><a href="https://webpack.docschina.org/configuration/resolve/#resolve-alias" target="_blank" rel="noopener noreferrer">官网参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="custom-block warning"><p class="custom-block-title">警告</p> <p>如果要使用国土项目的.eslintrc.js 文件，拷贝过来后需要修改以下配置，如果打包失败可能是依赖缺失，请检查依赖。</p></div> <div align="center"><img src="/assets/img/14.ab9e4ec9.png" width=""></div> <p>执行打包与基线打包效率对比可以看到用最新的webpack打包在效率上比基线快了很多</p> <div align="center"><img src="/assets/img/15.83f23ae5.png" width=""></div> <p>最后通过copyWebpackPlugin插件，将配置文件拷贝到打包后的文件中。</p> <div class="language- extra-class"><pre class="language-text"><code>npm i copy-webpack-plugin --save-dev
+</code></pre></div><p>使用该插件</p> <div class="language- extra-class"><pre class="language-text"><code>new copyWebpackPlugin([{ from: &quot;public/static&quot;, to: &quot;static&quot; }])
+</code></pre></div><p><a href="https://webpack.docschina.org/plugins/copy-webpack-plugin/" target="_blank" rel="noopener noreferrer">插件参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>最后在网页中查看打包好的系统，可以看到功能都正常。</p> <div align="center"><img src="/assets/img/16.e3b5f80d.png" width=""></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webpack/important/js.html" class="prev">
+        js 文件的处理
+      </a></span> <span class="next"><a href="/webpack/advance/splitchunks.html">
+        splitChunks代码分离
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.792161f7.js" defer></script><script src="/assets/js/2.d42e0240.js" defer></script><script src="/assets/js/9.21f909fd.js" defer></script>
+  </body>
+</html>
