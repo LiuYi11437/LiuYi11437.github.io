@@ -111,3 +111,20 @@ resolve: {
 	<img src="./images/15.png" width="">
 </div>
 
+最后通过copyWebpackPlugin插件，将配置文件拷贝到打包后的文件中。
+```
+npm i copy-webpack-plugin --save-dev
+```
+
+使用该插件
+```
+new copyWebpackPlugin([{ from: "public/static", to: "static" }])
+```
+
+[插件参考](https://webpack.docschina.org/plugins/copy-webpack-plugin/)
+
+最后在网页中查看打包好的系统，可以看到功能都正常。
+
+<div align=center>
+	<img src="./images/16.png" width="">
+</div>

@@ -48,6 +48,11 @@ module.exports = {
           title: "重要文件处理",
           collapsable: false,
           children: ["important/css", "important/js", "important/project"]
+        },
+        {
+          title: "webpack进阶配置",
+          collapsable: false,
+          children: ["advance/splitchunks"]
         }
       ]
     }
