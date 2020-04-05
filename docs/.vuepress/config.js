@@ -11,6 +11,7 @@ module.exports = {
   },
 
   themeConfig: {
+    theme: '@vuepress/blog',
     editLinks: false,
     docsDir: "docs",
     nav: [
@@ -36,6 +37,11 @@ module.exports = {
           title: "ansible",
           collapsable: false,
           children: ["ansible/install", "ansible/modules", "ansible/playbook"]
+        },
+        {
+          title: "实战",
+          collapsable: false,
+          children: ["shizhan/front_pro", "shizhan/node_pro"]
         }
       ],
       "/webpack/": [
